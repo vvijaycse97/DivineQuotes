@@ -138,11 +138,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Random random = new Random();
                 int val = random.nextInt(109-1)+1; // save random number in an integer variable
-                Log.i("Random number generated is ------>",Integer.toString(val));
+                Log.i("Random number is",Integer.toString(val));
                 // Reading data from SharedPreferences
                 String sharedPreferencesString = sharedPreferences.getString(Integer.toString(val),"");
                 Log.i("Getting the quotes","Divine Quote is ");
-                Log.i("sharedPreferencesString ---->",sharedPreferencesString);
+                Log.i("Divine Quote",sharedPreferencesString);
                 txtViewQuotes.setText(sharedPreferencesString);
             }
         });
